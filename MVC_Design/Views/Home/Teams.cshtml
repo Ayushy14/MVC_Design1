@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewBag.Title = "Teams";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section metatags
+{
+    <meta name="description" content="Index Page" />
+    <meta name="keywords" content="Index Keyword" />
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    @Html.Partial("_Header")
+    <style>
+        body {
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+                color: black;
+                padding: 8px 8px;
+                text-decoration: none;
+                display: block;
+            }
+
+                /* Change color of dropdown links on hover */
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+    </head>
+<body>
+    @Html.Partial("_TopMenu")
+    <section>
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">India</button>
+                    <div class="dropdown-content">
+                        <a href="https://en.wikipedia.org/wiki/Virat_Kohli">Virat Kohli</a>
+                        <a href="https://en.wikipedia.org/wiki/MS_Dhoni">Mahendra Singh Dhoni</a>
+                        <a href="https://en.wikipedia.org/wiki/Yuvraj_Singh">Yuvraj Singh</a>
+                        <a href="https://en.wikipedia.org/wiki/Rohit_Sharma">Rohit Sharma</a>
+                        <a href="https://en.wikipedia.org/wiki/Hardik_Pandya">Hardik Pandya</a>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Australia </button>
+                    <div class="dropdown-content">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Sri Lanka</button>
+                    <div class="dropdown-content">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Bangladesh</button>
+                    <div class="dropdown-content">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">England</button>
+                    <div class="dropdown-content">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Windies</button>
+                    <div class="dropdown-content">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">South Africa</button>
+                    <div class="dropdown-content">
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        </section>
+</body>
+</html>
